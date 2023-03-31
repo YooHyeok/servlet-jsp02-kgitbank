@@ -1,0 +1,82 @@
+<!-- Day02 ~ Day03 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼 예제</title>
+</head>
+<body>
+<h2>입력 폼 예제</h2>
+<form action="/a/Form.do" method="post">
+<table>
+<!-- <tr> : 줄 -->
+<tr>
+<!-- <td> : 칸 -->
+<td>아이디</td><td><input type=text name=name value="값">
+</tr>
+<tr>
+<td>비밀번호 : </td><td><input type=password name=pw>
+</tr>
+<tr>
+<td>생년월일 : </td><td><input type=date name=date>
+</td>
+</tr>
+<tr>
+<td>취미 : </td><td>
+<!-- checked는 선택되서 출력됨 -->
+<input type=checkbox name=hobby value=1 checked> 게임
+<input type=checkbox name=hobby value=2> 피아노
+<input type=checkbox name=hobby value=3> 노래
+</td>
+</tr>
+<tr>
+<td>성별 : </td><td><input type=radio name=gender value=M>남
+<td>성별 : </td><td><input type=radio name=gender value=F>여
+</td>
+</tr>
+<tr>
+<td>이메일 : </td><td><input type=email name=email >
+<!-- email pattern을 지정해주려면 정규표현식을 사용해야함 -->
+</td>
+</tr>
+<tr>
+<td>학년 : </td><td><input type=number name=grade min=1 max=4 step=1>
+</td>
+</tr>
+<tr>
+<!-- ^시작한다는표시  -->
+<!-- [0-9] 0부터 9까지 -->
+<td>연락처 : </td><td><input type=tel name=tel pattern="^[0][1][0-9](-|\s)[0-9]{3,4}(-|\s)[0-9]{4}$">
+</td>
+</tr>
+<tr>
+<!-- cols : 글자수  rows : 줄수 -->
+<td>하고 싶은 말 : </td><td><textarea name=toSay cols=20 rows=5>하고 싶은 말을 입력하세요</textarea>
+</td>
+</tr>
+<tr>
+<td>지역 : </td><td><select name=area size=2>
+<!-- <select name=area> : 선택 스크롤바 -->
+<option value=1>서울
+<option value=2>대전
+<option value=3>대구
+<option value=4>부산
+</select>
+</td>
+</tr>
+
+
+<tr>
+<!-- colspan=2 = 두칸  -->
+<!-- align=center = 가운데정렬  -->
+<td colspan=2 align=center>
+<input type=submit value=확인>
+<input type=reset value=취소>
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

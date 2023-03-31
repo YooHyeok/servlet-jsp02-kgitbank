@@ -1,0 +1,32 @@
+<!-- Day02 -->
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset="UTF-8">
+<title>Input 예제</title>
+</head>
+<body>
+<!--form : action으로 요청을 넘길때 사용 method 즉 요청방식을 지정 안하면 get방식.-->
+<form action="/a/Input.do">
+<!-- name에 입력한 이름이 파라미터 형태로 저장 -->
+이름 : <input type=text name=name><br>
+비밀번호 : <input type=password name=password><br>
+<!-- form태그 <=> submit 맞물려서 작동. 무조건 같이 사용-->
+<!-- submit을 누르면 요청메시지 파라미터를 포함해서 넘어감 -->
+<input type=submit value=입력>
+</form>
+
+<!--form : action으로 요청을 넘길때 사용 method 즉 요청방식을 지정 안하면 get방식.-->
+
+<form action="/a/Input.do" method=post>
+<!-- name에 입력한 이름이 파라미터 형태로 저장 -->
+이름 : <input type=text name=name><br>
+비밀번호 : <input type=password name=password><br>
+<!-- form태그 <=> submit 맞물려서 작동. 무조건 같이 사용-->
+<!-- submit을 누르면 요청메시지 파라미터를 포함해서 넘어감 -->
+<input type=submit value=입력>
+</form>
+
+
+</body>
+</html>
